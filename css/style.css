@@ -32,6 +32,7 @@ a:link {
 .header-wrap {
   max-width: 1190px; /* 화면폭이 1190 이하면, 100% */
   margin: 0 auto;
+  padding: 50px 0;
   display: flow-root;
 }
 
@@ -69,4 +70,24 @@ a:link {
 }
 .sns-links img:hover {
     opacity: 100%;
+}
+/* =================== visual 영역 ====================== */
+.hero-img {
+    
+    background-image: url("../images/visual_bg.jpg"); /* 배경-이미지: 경로() */
+    background-repeat: no-repeat; /* 배경-반복: 반복-안함 */
+    background-position: center; /* 배경-위치: 중앙(수평/수직) */
+    background-size: cover; /* 배경-크기: 빈공간 메울 수 있도록 */
+    /* background: url("../images/visual_bg.jpg") no-repeat center / cover; */
+}
+.main-item {
+    max-width: 1190px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+.main-item img {
+    position: absolute;
+    right: 0;
+    bottom: -65px;
 }

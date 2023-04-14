@@ -22,6 +22,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.scss" />
     <title>다모애</title>
   </head>
   <body>
@@ -52,7 +53,9 @@
             <a href="/"><img src="images/top_icon1.png" alt="처음으로" /></a>
           </li>
           <li>
-            <a href="#"><img src="images/top_icon2.png" alt="이메일" /></a>
+            <a href="mailto:cs@damoe.com"
+              ><img src="images/top_icon2.png" alt="이메일"
+            /></a>
           </li>
           <li>
             <a href="#"><img src="images/top_icon3.png" alt="검색" /></a>
@@ -61,6 +64,7 @@
       </div>
     </header>
     <div class="hero-img">
+      <!-- 헤어 모델 사진을 배경으로 표현 -->
       <div class="main-item">
         <img src="images/visual_img.png" alt="테라피 골드 샴푸" />
       </div>
@@ -71,15 +75,38 @@
         <h3 class="d-none">다모애 샴푸와 CF</h3>
         <div class="items-pr">
           <div class="theraphy-items">
+            <h4 class="box-title">damoe theraphy items</h4>
             <div>
+              <div class="to-bag">
+                <a
+                  href="#"
+                  onclick="confirm('장바구니에 담겼습니다, 장바구니로 이동하시겠습니까?')"
+                >
+                  <span class="material-symbols-outlined"> shopping_bag </span>
+                </a>
+              </div>
               <img src="images/prd_img1.jpg" alt="테라피 골드 샴푸" />
             </div>
             <div>
+              <div class="to-bag">
+                <a
+                  href="#"
+                  onclick="confirm('장바구니에 담겼습니다, 장바구니로 이동하시겠습니까?')"
+                >
+                  <span class="material-symbols-outlined"> shopping_bag </span>
+                </a>
+              </div>
               <img src="images/prd_img2.jpg" alt="헤어토닉" />
             </div>
           </div>
           <div class="damoe-pr">
+            <h4 class="box-title">damoe pr</h4>
             <div>
+              <ul class="pager">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
               <img src="images/pr.jpg" alt="헤어 에센스" />
             </div>
           </div>
@@ -93,17 +120,24 @@
       </div>
     </aside>
     <footer>
-      <ul class="extras-link">
-        <li><a href="#">개인정보취급방침</a></li>
-        <li><a href="#">이용약관</a></li>
-        <li><a href="#">오시는길</a></li>
-      </ul>
-      <p>
-        상호명: 다모애 대표자 : 이지연 주소 : 광주 서구 경열로 3 다모애 <br />
-        대표전화: 062-362-7797 개인정보취급관리책임자 : 홍길동 이메일주소 :
-        cs@damoe.com
-      </p>
-      <p>&copy; <span class="brand">damoe.</span></p>
+      <div class="footer-wrap">
+        <ul class="extras-link">
+          <li><a href="#">개인정보취급방침</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">오시는길</a></li>
+        </ul>
+        <div class="sub-logo">
+          <a href="/">
+            <img src="images/footer_logo.png" alt="다모애" />
+          </a>
+        </div>
+        <p>
+          상호명: 다모애 대표자 : 이지연 주소 : 광주 서구 경열로 3 다모애 <br />
+          대표전화: 062-362-7797 개인정보취급관리책임자 : 홍길동 이메일주소 :
+          cs@damoe.com
+        </p>
+        <p>&copy; <span class="brand">damoe.</span></p>
+      </div>
     </footer>
   </body>
 </html>
